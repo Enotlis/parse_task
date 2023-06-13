@@ -56,7 +56,7 @@ def get_count_pages(url_path: str) -> int:
         return int(count_page)
     except TimeoutException:
         driver.close()
-        return 1
+        return 0
 
 def main():
     url_path = 'https://online.metro-cc.ru/category/molochnye-prodkuty-syry-i-yayca/syry'
